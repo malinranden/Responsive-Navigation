@@ -13,15 +13,23 @@
         <nav class="nav" id="nav-drop">
             <a class="nav__home" href="#">Home</a>
             <a class="nav__link" href="#">About</a>
-            <a class="nav__services" href="#">Services<i class="fa-solid fa-caret-down"></i>
+            <div class="dropdown">
+                <a class="nav__services" href="#">Services<i class="fa-solid fa-caret-down"></i>
+                
                 <div class="services__dropdown">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                 </div>
-            </a>
+
+                </a>    
+
+                
+            </div>
             <a class="nav__link" href="#">Contact</a>
-            <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+            <div class="icon-container">
+                <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+            </div>
         </nav>
     </div>
     
