@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/edb0868ad4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="nav-container">
+        <nav class="nav" id="nav-drop">
+            <a class="nav__home" href="#">Home</a>
+            <a class="nav__link" href="#">About</a>
+            <a class="nav__services" href="#">Services<i class="fa-solid fa-caret-down"></i>
+                <div class="services__dropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </a>
+            <a class="nav__link" href="#">Contact</a>
+            <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </div>
     
+    <script>
+    function dropNav() {
+    let drop = document.getElementById("nav-drop");
+    if (drop.className === "nav") {
+        drop.className += " responsive";
+    } else {
+        drop.className = "nav";
+    }
+    }
+    </script>
 </body>
 </html>

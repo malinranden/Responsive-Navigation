@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: rgb(237, 161, 94);
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1000%;
+    height: 8%;
+    background-color: rgb(63, 35, 88);
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  width: 100%;
+  padding: 3%;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  align-content: center;
+}
+.nav__home {
+    background-color: rgb(225, 117, 23);
+}
+.nav__services {
+    display: flex;
+}
+.nav a:hover {
+    background-color: rgb(187, 116, 55);
+}
+.nav__services:hover {
+    background-color: rgb(179, 126, 79);
+}
+.fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services__dropdown {
+    /* visibility: hidden; */
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.services__dropdown a:hover {
+    display: block;
+}
+.services__dropdown:hover {
+    display: block;
+}
